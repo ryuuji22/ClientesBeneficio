@@ -1,25 +1,28 @@
 spring:
   application:
-    name: accountManager
+    name: ClientesBeneficio
   jpa:
-    database: POSTGRESQL
+    database: h2
     show-sql: false
     hibernate:
-      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+      ddl-auto: create
   sql:
     init:
       mode: always
       continue-on-error: true
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
-    driverClassName: org.postgresql.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
   mvc:
     pathmatch:
-      matching-strategy: ant-path-matcher 
-JWT:
-  secret: "x2952h6KuVfcEv6OPlwixsoBJoSa6YkO$"
-  expirationMinutes: 5
+      matching-strategy: ant-path-matcher
+files:
+  sk: "https://raw.githubusercontent.com/SistemasComoHogar/ClientesBack/main/Referencias/sk_formato.json"
+  th: "https://raw.githubusercontent.com/SistemasComoHogar/ClientesBack/main/Referencias/th_formato.xml"
 server:
   port: 8001

@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "e58d0ab4-470c-4f00-8d8a-a7b33d836002",
+		"name": "COMOHOGAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TH BENEFITS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/api/benefit/th",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"benefit",
+						"th"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TH BENEFITS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/benefit/th",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"benefit",
+								"th"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 17:18:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Descuento1\",\n    \"Descuento2\",\n    \"Descuento3\",\n    \"Descuento4\",\n    \"Descuento5\",\n    \"Descuento6\"\n]"
+				}
+			]
+		},
+		{
+			"name": "SK BENEFITS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/api/benefit/sk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"benefit",
+						"sk"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SK BENEFITS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/benefit/sk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"benefit",
+								"sk"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 17:19:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"beneficio\": \"Descuento1\"\n    },\n    {\n        \"beneficio\": \"Descuento2\"\n    },\n    {\n        \"beneficio\": \"Descuento3\"\n    },\n    {\n        \"beneficio\": \"Descuento4\"\n    },\n    {\n        \"beneficio\": \"Descuento5\"\n    },\n    {\n        \"beneficio\": \"Descuento6\"\n    },\n    {\n        \"beneficio\": \"Descuento7\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CREATE CLIENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"names\":\"Gabriel\",\r\n    \"email\":\"diego_and21@hotmail.com\",\r\n    \"groupType\":\"th\",\r\n    \"benefit\":\"Descuento1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CLIENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL CLIENTS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 15:56:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"2cdd29ec-d907-4086-9d0a-313eaebe646f\",\n        \"names\": \"Diego\",\n        \"email\": \"diego_and21@hotmail.com\",\n        \"phone\": null,\n        \"type\": \"TH\",\n        \"option\": \"Descuento1\"\n    },\n    {\n        \"id\": \"cbc068a3-eb80-41b7-b550-929be05c2d40\",\n        \"names\": \"Gabriel\",\n        \"email\": \"ejemplo@hotmail.com\",\n        \"phone\": null,\n        \"type\": \"TH\",\n        \"option\": \"Descuento2\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
